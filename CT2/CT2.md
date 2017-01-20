@@ -21,4 +21,8 @@ Trên sân trường có N cái ghế (N &le; 10<sup>9</sup>+7). Hai người l�
 
 ## Pre-thinking and simple "obvious" fact:
 * Dễ thấy rằng, trong trường hợp **a)**, nếu ở bước đầu tiên, ```số ghế người đi trước đưa vào``` &ge; ![Imgur](http://i.imgur.com/zjg5xgv.gif), ở bước tiếp theo người thứ hai sẽ ngay lập tức có thể đưa toàn bộ số ghế còn lại vào kho.  
-&emsp;&emsp; => Vậy để tránh điều này xảy ra, ở bước đầu tiên người đi trước phải đưa vào phải ít ![Imgur](http://i.imgur.com/zjg5xgv.gif)
+&emsp;&emsp; => Vậy để tránh điều này xảy ra, ở bước đầu tiên người đi trước phải đưa vào phải ít hơn ![Imgur](http://i.imgur.com/zjg5xgv.gif) cái ghế.
+
+* Tương tự, ta nhận thấy, trong trường hợp **b)**, ở bước đầu tiên người đi trước phải đưa vào ít hơn ![Imgur](http://i.imgur.com/8deh5qY.gif) cái ghế.
+
+**_Tổng Quát: Nếu có tất cả N cái ghế, ở mỗi bước người đi sau không được đưa vào nhiều hơn ![Imgur](http://i.imgur.com/0e6hgEe.gif) cái ghế._**
