@@ -126,7 +126,7 @@ _Chú thích: Ở đây, xét trường hợp giả sử cả 2 người đều 
 <a name="warp_Conclusion"></a>
 ## Mở rộng
 * Với các trường hợp K > 2 (trường hợp tổng quát), ta có thể lập luận tương tự như (b), rồi tìm ra công thức tổng quát cho bài toán.
-* Do mình rảnh đời nên mình mới ngồi format code thế này -_- _Don't ask why pls._
+* Do mình rảnh đời nên mình mới ngồi format code thế này ==' _Don't ask why pls._
 
 ## Kết
 _Nghĩ ra từ hôm ra đề (và sáng hôm sau đó, đoạn công thức) mà giờ mới có time viết ra._
