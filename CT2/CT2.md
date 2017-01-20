@@ -25,4 +25,4 @@ Trên sân trường có N cái ghế (N &le; 10<sup>9</sup>+7). Hai người l�
 
 * Tương tự, ta nhận thấy, trong trường hợp **b)**, ở bước đầu tiên người đi trước phải đưa vào ít hơn ![Imgur](http://i.imgur.com/8deh5qY.gif) cái ghế.
 
-**_Tổng Quát: Nếu có tất cả N cái ghế, ở mỗi bước người đi sau không được đưa vào nhiều hơn ![Imgur](http://i.imgur.com/0e6hgEe.gif) cái ghế._**
+**_Tổng Quát: Nếu có tất cả N cái ghế, ở mỗi bước người đi sau không được đưa vào quá ```K lần số ghế của người đi trước```, thì ở bước đầu tiên người đi trước phải di chuyển ít hơn ![Imgur](http://i.imgur.com/0e6hgEe.gif) cái ghế._**
