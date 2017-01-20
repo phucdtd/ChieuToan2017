@@ -49,3 +49,12 @@ _Chú thích: Kí hiệu |n| là phần nguyên của n._
   * Bước 2: Đưa vào số ghế bằng 2<sup>X</sup>. Số ghế còn lại là 2<sup>K</sup> * (M-X) = 2<sup>K</sup> * 2<sup>A</sup> = 2<sup>K+A</sup>. Đưa về trường hợp 2<sup>K</sup> ở trên.
 
 **=> VẬY LÀ CHẮC CHẮN THẮNG TRONG MỌI TRƯỜNG HỢP. (PROBLEM A SOLVED)**
+
+## Nhận xét cho bài (b)
+* Trường hợp K = 1 là trường hợp đặc biệt nên ta có thể giải theo cách trên, ở bài này K = 2, ta sẽ giải theo cách "Đệ quy", hay nói đúng hơn là quy về các trường hợp nhỏ hơn đã biết, từ đó suy ra công thức tổng quát cho bài toán.
+* Phối hợp sử dụng nhận xét ở đầu bài để loại trừ tối đa số trường hợp có thể để dễ dàng xét.
+
+## Solution to Problem (b)
+
+## Mở rộng
+* Với các trường hợp K > 2 (trường hợp tổng quát), ta có thể lập luận tương tự như (b), rồi tìm ra công thức tổng quát cho bài toán.
