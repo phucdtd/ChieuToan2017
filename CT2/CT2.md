@@ -27,7 +27,7 @@
 
 * Tương tự, ta nhận thấy, trong trường hợp **b)**, ở bước đầu tiên người đi trước phải đưa vào ít hơn ![Imgur](http://i.imgur.com/8deh5qY.gif) cái ghế.
 
-**_Tổng Quát: Nếu có tất cả N cái ghế, ở mỗi bước người đi sau không được đưa vào quá ```K lần số ghế của người đi trước```, thì ở bước đầu tiên người đi trước phải di chuyển ít hơn ![Imgur](http://i.imgur.com/0e6hgEe.gif) cái ghế._**
+**_Tổng Quát: Nếu có tất cả N cái ghế, và ở mỗi bước người đi sau không được đưa vào quá ```K lần số ghế của người đi trước```, thì ở bước đầu tiên người đi trước phải di chuyển ít hơn ![Imgur](http://i.imgur.com/0e6hgEe.gif) cái ghế._**
 
 _Chú thích: Kí hiệu |n| là phần nguyên của n._
 
@@ -41,5 +41,11 @@ _Chú thích: Kí hiệu |n| là phần nguyên của n._
   * Bước 1: Nếu "kết liễu" được đối thủ, phải "kết liễu" ngay lập tức.
   * Bước 2: Nếu đối thủ chọn 1 số lẻ => số ghế còn lại là số lẻ, đến lượt mình đi, trả về trường hợp trên.
   * Bước 3: Nếu đối thủ chọn 1 số chẵn, đến lượt mình đi, chọn số ghế NHỎ NHẤT CÓ THỂ để số ghế còn lại có dạng 2<sup>M</sup> (M&le;K). Điều này đảm bảo mình sẽ không chết vì nếu đối thủ chọn số ghế là 2<sup>K-1</sup> thì đã bị "kết liễu" ở Bước 1. Vậy ta chỉ cần đưa vào số ghế sao cho số ghế còn lại là 2<sup>K-1</sup>. Số ghế ta đưa vào chắc chắn nhỏ hơn 2<sup>K-1</sup>. Lại có số ghế hiện tại có dạng 2<sup>M</sup>, quay trở lại bước đầu và lặp lại quá trình đến khi thắng.
-* Nếu N là số chẵn không có dạng (2^i)*k (k là số lẻ): Ta lựa chọn là người đi trước, và làm theo chiến thuật sau:
-  
+* Nếu N là số chẵn không có dạng (2<sup>K</sup>)*M (M là số lẻ): Ta lựa chọn là người đi trước, và làm theo chiến thuật sau:
+  * Bước 1: Tìm số X thoả mãn tính chất sau:
+    * X &le; |M/2|
+    * (M-X) có dạng 2<sup>A</sup>
+    * Có thể chứng minh số như vậy luôn tồn tại vì đó chính là số X nhỏ nhất thoả mãn điều kiện (2). Nó chắc chắn nhỏ hơn M/2 vì nếu viết M dưới dạng 2<sup>B</sup>-C (C < 2<sup>B-1</sup> vì nếu C &ge; 2<sup>B-1</sup> ta có thể viết nó dưới dạng 2<sup>B-1</sup> - C') thì có: X = 2<sup>B-1</sup>-C < 2<sup>B-1</sup>-(C/2) = M/2.
+  * Bước 2: Đưa vào số ghế bằng 2<sup>X</sup>. Số ghế còn lại là 2<sup>K</sup> * (M-X) = 2<sup>K</sup> * 2<sup>A</sup> = 2<sup>K+A</sup>. Đưa về trường hợp 2<sup>K</sup> ở trên.
+
+**=> VẬY LÀ CHẮC CHẮN THẮNG TRONG MỌI TRƯỜNG HỢP. (PROBLEM A SOLVED)**
