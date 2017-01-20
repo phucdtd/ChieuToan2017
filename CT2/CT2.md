@@ -111,8 +111,8 @@ _Chú thích: Ở đây, xét trường hợp giả sử cả 2 người đều 
 <a name="skip_this"></a>
 * Bằng cách suy luận như trên, ta có thể lần lượt tìm ra cách thắng ở tất cả các trường hợp.
 * Ta có nhận xét: Nếu trong các trường hợp mình có thể "quy về" sau bước đầu tiên, có ít nhất 1 trường hợp người đi sau thắng thì mình sẽ thắng (Vì sau bước đầu tiên, chuyển về bài toán con mới thì mình sẽ là người đi sau). Vì tất cả các trường hợp ta xét ở đây là "Người đi sau sẽ thắng bất kể người trước chọn cái gì", ta thực sự không cần quan trọng việc nước đi đầu tiên của mình có thể ảnh hưởng (limit) đến nước đầu tiên của người kia dẫn đến việc chiến lược không có kết quả hay không.
-* Chiến lược cụ thể: Mỗi khi có thể "kết liễu" đối thủ thì sẽ "kết liễu" ngay lập tức, không thì mỗi bước chọn số nhỏ nhất dẫn đến cái (Đi sau thắng) nhỏ tiếp theo.
-* Kết luận: Ta cần phải có công thức tính các số hạng của dãy (Đi sau thắng). Với 2 số hạng đầu của dãy là 2 và 3, ta có thể làm được điều này.
+* Chiến lược cụ thể: Mỗi khi có thể "kết liễu" đối thủ thì sẽ "kết liễu" ngay lập tức, không thì mỗi bước chọn số nhỏ nhất dẫn đến cái ```Đi sau thắng``` nhỏ tiếp theo.
+* Kết luận: Ta cần phải có công thức tính các số hạng của dãy ```Đi sau thắng```. Với 2 số hạng đầu của dãy là 2 và 3, ta có thể làm được điều này.
 * Công thức và chứng minh:
   * _Chú thích: GLW = Go Last Win._
   * Các trường hợp thắng là các trường hợp thoả mãn công thức:  
