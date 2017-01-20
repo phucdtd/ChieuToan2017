@@ -40,7 +40,7 @@ _Chú thích: Kí hiệu |n| là phần nguyên của n._
 * Nếu N là số chẵn có dạng (2<sup>K</sup>): Ta lựa chọn là người đi sau và làm theo chiến thuật sau (Nếu không thoả mãn chuyển sang bước sau):
   * Bước 1: Nếu "kết liễu" được đối thủ, phải "kết liễu" ngay lập tức.
   * Bước 2: Nếu đối thủ chọn 1 số lẻ => số ghế còn lại là số lẻ, đến lượt mình đi, trả về trường hợp trên.
-  * Bước 3: Nếu đối thủ chọn 1 số chẵn, đến lượt mình đi, chọn số ghế NHỎ NHẤT CÓ THỂ để số ghế còn lại có dạng 2<sup>M</sup> (M&le;K). Điều này đảm bảo mình sẽ không chết vì nếu đối thủ chọn số ghế là 2<sup>K-1</sup> thì đã bị "kết liễu" ở Bước 1. Vậy ta chỉ cần đưa vào số ghế sao cho số ghế còn lại là 2<sup>K-1</sup>. Số ghế ta đưa vào chắc chắn nhỏ hơn 2<sup>K-1</sup>. Lại có số ghế hiện tại có dạng 2<sup>M</sup>, quay trở lại bước đầu và lặp lại quá trình đến khi thắng.
+  * Bước 3: Nếu đối thủ chọn 1 số chẵn, đến lượt mình đi, chọn số ghế NHỎ NHẤT CÓ THỂ để số ghế còn lại có dạng 2<sup>M</sup> (M&lt;K). Điều này đảm bảo mình sẽ không chết vì nếu đối thủ chọn số ghế là 2<sup>K-1</sup> thì đã bị "kết liễu" ở Bước 1. Vậy ta chỉ cần đưa vào số ghế sao cho số ghế còn lại là 2<sup>K-1</sup>. Số ghế ta đưa vào chắc chắn nhỏ hơn 2<sup>K-1</sup>. Lại có số ghế hiện tại có dạng 2<sup>M</sup>, quay trở lại bước đầu và lặp lại quá trình đến khi thắng.
 * Nếu N là số chẵn không có dạng (2<sup>K</sup>)*M (M là số lẻ): Ta lựa chọn là người đi trước, và làm theo chiến thuật sau:
   * Bước 1: Tìm số X thoả mãn tính chất sau:
     * X &le; |M/2|
