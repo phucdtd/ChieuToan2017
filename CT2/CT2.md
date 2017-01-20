@@ -75,7 +75,50 @@ _Chú thích: Kí hiệu |n| là phần nguyên của n._
 
 <a name="warp_sol_b"></a>
 ## Solution to Problem (b)
-
+_Chú thích: Ở đây, xét trường hợp giả sử cả 2 người đều biết chơi 1 cách tối ưu, nói cách khác là không "tự sát", nếu 1 người "tự sát", người kia ngay lập tức phải bỏ chiến thuật và "kết liễu" người đó. Vì vậy, một khi đã viết "Người đi trước thắng", nghĩa là dù người đi sau có đi thế nào đi nữa thì người đi trước vẫn có cách dồn người đi sau chết, và ngược lại._  
+**Chú ý: Các trường hợp sau xét rất nhiều để dễ hiểu, bạn có thể đọc hết hoặc nếu hiểu rồi thì [skip](#skip_this)**
+* Xét các trường hợp theo số ghế: (Và áp dụng nhận xét ở đầu bài) (Giả sử cả 2 người đều biết chơi tối ưu)
+  * 2 ghế: Người đi trước chắc chắn thua do không thể đưa vào ít hơn ![Imgur](http://i.imgur.com/29xptJv.gif) cái ghế.
+    * Kết luận: Người đi sau thắng.
+  * 3 ghế: Người đi trước chắc chắn thua vì không thể đưa vào ít hơn ![Imgur](http://i.imgur.com/V4hRawt.gif) cái ghế.
+    * Kết luận: Người đi sau thắng.
+  * 4 ghế: Người đi trước phải đưa vào ít hơn ![Imgur](http://i.imgur.com/lRcKm7l.gif) cái ghế, hay nói cách khác là buộc phải đưa vào 1 cái ghế. Trả về bài toán 3 cái ghế, lúc này lượt đi tới sẽ là của người kia nên người kia sẽ thua.
+    * Kết luận: Người đi trước thắng.
+  * 5 ghế: Lập luận tương tự, người đi trước buộc phải đưa vào 1 cái ghế, đưa về bài toán 4 cái ghế, tới lượt người kia nên người kia thắng.
+    * Kết luận: Người đi sau thắng.
+  * 6 ghế: Lập luận tương tự, buộc phải đưa vào 1 ghế, đi trước chắc thắng
+    * Kết luận: Người đi trước thắng.
+  * 7 ghế: Người đi trước được chọn giữa đưa vào 1 hoặc 2 ghế:
+    * Đưa vào 1 ghế: Đưa về bài toán 6 ghế, mình đi sau => Thua
+    * Đưa vào 2 ghế: Đưa về bài toán 5 ghế, mình đi sau => Thắng
+    * Kết luận: Người đi trước thắng vì là người ra quyết định, và có cách để thắng.
+  * 8 ghế: Đưa về 6 ghế hoặc 7 ghế, đi sau => Dù thế nào cũng thua
+    * Kết luận: Người đi sau thắng.
+  * 9 ghế: Có thể đưa về 7 ghế hoặc 8 ghế, đi sau => Đưa về 8 ghế để thắng
+    * Kết luận: Người đi trước thắng.
+  * 10 ghế: Đưa về 7,8 hoặc 9, đi sau => Đưa về 8 để thắng
+    * Kết luận: Người đi trước thắng.
+  * 11 ghế: Đưa về 8,9 hoặc 10, đi sau => Đưa về 8, thắng
+    * Kết luận: Người đi trước thắng.
+  * 12 ghế: Đưa về 9,10 hoặc 11, đi sau => Kiểu gì cũng thua
+    * Kết luận: Người đi sau thắng.
+  * 13 ghế: 9,10,11,12 => Win (12)
+    * Kết luận: Người đi trước thắng.
+  * 14 ghế: 10,11,12,13 => Win (12)
+    * Kết luận: Người đi trước thắng
+  * ... (Lập luận tương tự đến khi có N cần thiết) (15,16,17 đi trước thắng, 18 đi sau thắng...)
+<pre></pre>
+<a name="skip_this"></a>
+* Bằng cách suy luận như trên, ta có thể lần lượt tìm ra cách thắng ở tất cả các trường hợp.
+* Ta có nhận xét: Nếu trong các trường hợp mình có thể "quy về" sau bước đầu tiên, có ít nhất 1 trường hợp người đi sau thắng thì mình sẽ thắng (Vì sau bước đầu tiên, chuyển về bài toán con mới thì mình sẽ là người đi sau). Vì tất cả các trường hợp ta xét ở đây là "Người đi sau sẽ thắng bất kể người trước chọn cái gì", ta thực sự không cần quan trọng việc nước đi đầu tiên của mình có thể ảnh hưởng (limit) đến nước đầu tiên của người kia dẫn đến việc chiến lược không có kết quả hay không.
+* Chiến lược cụ thể: Mỗi khi có thể "kết liễu" đối thủ thì sẽ "kết liễu" ngay lập tức, không thì mỗi bước chọn số nhỏ nhất dẫn đến cái (Đi sau thắng) nhỏ tiếp theo.
+* Kết luận: Ta cần phải có công thức tính các số hạng của dãy (Đi sau thắng). Với 2 số hạng đầu của dãy là 2 và 3, ta có thể làm được điều này.
+* Công thức và chứng minh:
+  * _Chú thích: GLW = Go Last Win._
+  * Các trường hợp thắng là các trường hợp thoả mãn công thức:  
+  * ![Imgur](http://i.imgur.com/gaTfNFT.gif)
+    
+  
 <a name="warp_Conclusion"></a>
 ## Mở rộng
 * Với các trường hợp K > 2 (trường hợp tổng quát), ta có thể lập luận tương tự như (b), rồi tìm ra công thức tổng quát cho bài toán.
