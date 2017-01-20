@@ -116,7 +116,9 @@ _Chú thích: Ở đây, xét trường hợp giả sử cả 2 người đều 
 * Công thức và chứng minh:
   * _Chú thích: GLW = Go Last Win._
   * Các trường hợp thắng là các trường hợp thoả mãn công thức:  
-  * ![Imgur](http://i.imgur.com/gaTfNFT.gif)
+  * ![Imgur](http://i.imgur.com/NYzeZCt.gif)
+  * Ngay sau đó là 1 trường hợp thua nên có công thức:
+  * ![Imgur](http://i.imgur.com/mrUgZIV.gif)
     
   
 <a name="warp_Conclusion"></a>
