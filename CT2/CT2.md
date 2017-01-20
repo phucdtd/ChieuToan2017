@@ -1,17 +1,22 @@
-<a name="warp_Title"></a>
+<a name="warp_Top"></a>
+<details>
+  <summary>_Warp list:_ </summary>
+  [Top Page](#warp_Top)  
+  [Đề bài](#warp_Statement)  
+  [Nhận xét tổng quan](#warp_axiom)  
+  [Nhận xét bài (a)](#warp_cmt_a)  
+  [Solution câu (a)](#warp_sol_a)  
+  [Nhận xét bài (b)](#warp_cmt_b)  
+  [Solution câu (b)](#warp_sol_b)  
+  [Tổng quát và mở rộng](#warp_Conclusion)  
+  <pre>
+  </pre>
+</details>
 # Chiếu Toán 2
 
 ## By Hoàng Bảo Phúc
 
-<details>
-  <summary>_Warp list:_ </summary>
-  [Tiêu đề chính](#warp_Title)  
-  [Đề bài]
-  
-  <pre>
-  </pre>
-</details>
-
+<a name="warp_Statement"></a>
 ## Problem statement:
 <details>
   <summary>_Original Problem statement_ (13 dòng)</summary>
@@ -31,6 +36,7 @@
 &emsp; a) Người đi sau không được chuyển nhiều ghế hơn người đi trước.  
 &emsp; b) Người đi sau không được chuyển quá ```2 lần số ghế của người đi trước```  
 
+<a name="warp_axiom"></a>
 ## Pre-thinking to get A simple "obvious but important" axiom:
 * Dễ thấy rằng, trong trường hợp **a)**, nếu ở bước đầu tiên, ```số ghế người đi trước đưa vào``` &ge; ![Imgur](http://i.imgur.com/zjg5xgv.gif), ở bước tiếp theo người thứ hai sẽ ngay lập tức có thể đưa toàn bộ số ghế còn lại vào kho.  
 &emsp;&emsp; => Vậy để tránh điều này xảy ra, ở bước đầu tiên người đi trước phải đưa vào phải ít hơn ![Imgur](http://i.imgur.com/zjg5xgv.gif) cái ghế.
@@ -41,10 +47,12 @@
 
 _Chú thích: Kí hiệu |n| là phần nguyên của n._
 
+<a name="warp_cmt_a"></a>
 ## Nhận xét cho bài (a)
 * Khi 1 người lựa chọn đưa vào 1 cái ghế ở bước thứ i bất kì, tất cả các nước sau đó của cả 2 người sẽ BUỘC PHẢI LÀ ```Đưa vào 1 cái ghế```. Vì ở mỗi nước không thể di chuyển quá số ghế ở bước trước và không thể không di chuyển cái ghế nào.
 * Khi điều này xảy ra, vì trò chơi chỉ có 2 người, nên việc lặp đi lặp lại thao tác ```Đưa vào 1 cái ghế``` không làm ảnh hưởng đến tính chẵn lẻ. Vậy nên chắc chắn người đưa vào 1 cái ghế mà khiến cho số ghế còn lại đang lẻ chuyển thành chẵn sẽ là người thắng cuộc (Vì 1 là số lẻ).
 
+<a name="warp_sol_a"></a>
 ## Solution to Problem (a)
 * Dễ nhận thấy nếu N là số lẻ, ta chỉ cần lựa chọn là người đi trước, và ở bước đầu tiên di chuyển vào 1 cái ghế, Theo lập luận (2) ở trên, chắc chắn ta sẽ là người thắng cuộc. Điều này cũng áp dụng nếu lượt hiện tại là lượt của mình và số ghế còn lại hiện tại là số lẻ.
 * Nếu N là số chẵn có dạng (2<sup>K</sup>): Ta lựa chọn là người đi sau và làm theo chiến thuật sau (Nếu không thoả mãn chuyển sang bước sau):
@@ -60,11 +68,14 @@ _Chú thích: Kí hiệu |n| là phần nguyên của n._
 
 **=> VẬY LÀ CHẮC CHẮN THẮNG TRONG MỌI TRƯỜNG HỢP. (PROBLEM A SOLVED)**
 
+<a name="warp_cmt_b"></a>
 ## Nhận xét cho bài (b)
 * Trường hợp K = 1 là trường hợp đặc biệt nên ta có thể giải theo cách trên, ở bài này K = 2, ta sẽ giải theo cách "Đệ quy", hay nói đúng hơn là quy về các trường hợp nhỏ hơn đã biết, từ đó suy ra công thức tổng quát cho bài toán.
 * Phối hợp sử dụng nhận xét ở đầu bài để loại trừ tối đa số trường hợp có thể để dễ dàng xét.
 
+<a name="warp_sol_b"></a>
 ## Solution to Problem (b)
 
+<a name="warp_Conclusion"></a>
 ## Mở rộng
 * Với các trường hợp K > 2 (trường hợp tổng quát), ta có thể lập luận tương tự như (b), rồi tìm ra công thức tổng quát cho bài toán.
