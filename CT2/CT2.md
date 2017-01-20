@@ -20,5 +20,5 @@ Trên sân trường có N cái ghế (N &le; 10<sup>9</sup>+7). Hai người l�
 &emsp; b) Người đi sau không được chuyển quá ```2 lần số ghế của người đi trước```  
 
 ## Pre-thinking and simple "obvious" fact:
-* Dễ thấy rằng, trong trường hợp **a)**, nếu ở bước đầu tiên, ```số ghế người đi trước đưa vào``` &ge; ![Equation](http://imgur.com/a/ljVbq), ở bước tiếp theo người thứ hai sẽ ngay lập tức có thể đưa toàn bộ số ghế còn lại vào kho.  
-&emsp;&emsp; => Vậy để tránh điều này xảy ra, ở bước đầu tiên người đi trước phải đưa vào phải ít ![Equation](http://imgur.com/a/ljVbq)
+* Dễ thấy rằng, trong trường hợp **a)**, nếu ở bước đầu tiên, ```số ghế người đi trước đưa vào``` &ge; ![Equation](http://i.imgur.com/OeXtiqv.gif), ở bước tiếp theo người thứ hai sẽ ngay lập tức có thể đưa toàn bộ số ghế còn lại vào kho.  
+&emsp;&emsp; => Vậy để tránh điều này xảy ra, ở bước đầu tiên người đi trước phải đưa vào phải ít ![Equation](http://i.imgur.com/OeXtiqv.gif)
