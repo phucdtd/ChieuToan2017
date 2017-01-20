@@ -13,16 +13,23 @@
   
   &emsp;Có vẻ đây là một lần đánh cược quá hời với Minh Mê Mệt. Liệu cậu chàng có thể có một chiến lược tối ưu để được miễn thi cho dù ban đầu có bao nhiêu ghế ở sân trường đi chăng nữa ?  
   &emsp;Vụ đánh cược này quá dễ? Giờ cô Tú thay đổi quy luật: Mỗi lần chuyển, số ghế người sau chuyển không vượt quá hai lần số ghế người trước chuyển.
+  <pre>
+  
+  </pre>
 </details>
 
-Trên sân trường có N cái ghế (N &le; 10<sup>9</sup>+7). Hai người lần lượt luân phiên đưa ghế vào trong kho (người đầu tiên có thể đưa bất kì số ghế nào vào kho nhưng không phải tất cả). Hãy tìm ra 1 chiến lược tối ưu để bạn luôn là người đưa được cái ghế cuối cùng vào trong kho nếu:  
+&emsp; &emsp; - Trên sân trường có N cái ghế (N &le; 10<sup>9</sup>+7). Hai người lần lượt luân phiên đưa ghế vào trong kho (người đầu tiên có thể đưa bất kì số ghế nào vào kho nhưng không phải tất cả). Hãy tìm ra 1 chiến lược tối ưu để bạn luôn là người đưa được cái ghế cuối cùng vào trong kho nếu:  
 &emsp; a) Người đi sau không được chuyển nhiều ghế hơn người đi trước.  
 &emsp; b) Người đi sau không được chuyển quá ```2 lần số ghế của người đi trước```  
 
-## Pre-thinking and simple "obvious" fact:
+## Pre-thinking to get A simple "obvious but important" axiom:
 * Dễ thấy rằng, trong trường hợp **a)**, nếu ở bước đầu tiên, ```số ghế người đi trước đưa vào``` &ge; ![Imgur](http://i.imgur.com/zjg5xgv.gif), ở bước tiếp theo người thứ hai sẽ ngay lập tức có thể đưa toàn bộ số ghế còn lại vào kho.  
 &emsp;&emsp; => Vậy để tránh điều này xảy ra, ở bước đầu tiên người đi trước phải đưa vào phải ít hơn ![Imgur](http://i.imgur.com/zjg5xgv.gif) cái ghế.
 
 * Tương tự, ta nhận thấy, trong trường hợp **b)**, ở bước đầu tiên người đi trước phải đưa vào ít hơn ![Imgur](http://i.imgur.com/8deh5qY.gif) cái ghế.
 
 **_Tổng Quát: Nếu có tất cả N cái ghế, ở mỗi bước người đi sau không được đưa vào quá ```K lần số ghế của người đi trước```, thì ở bước đầu tiên người đi trước phải di chuyển ít hơn ![Imgur](http://i.imgur.com/0e6hgEe.gif) cái ghế._**
+
+_Chú thích: Kí hiệu |n| là phần nguyên của n._
+
+## Solution to Problem (a)
