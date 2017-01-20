@@ -46,7 +46,7 @@ _Chú thích: Kí hiệu |n| là phần nguyên của n._
     * X &le; |M/2|
     * (M-X) có dạng 2<sup>A</sup>
     * Có thể chứng minh số như vậy luôn tồn tại vì đó chính là số X nhỏ nhất thoả mãn điều kiện (2). Nó chắc chắn nhỏ hơn M/2 vì nếu viết M dưới dạng 2<sup>B</sup>-C (C < 2<sup>B-1</sup> vì nếu C &ge; 2<sup>B-1</sup> ta có thể viết nó dưới dạng 2<sup>B-1</sup> - C') thì có: X = 2<sup>B-1</sup>-C < 2<sup>B-1</sup>-(C/2) = M/2.
-  * Bước 2: Đưa vào số ghế bằng 2<sup>K</sup>*X. Số ghế còn lại là 2<sup>K</sup> * (M-X) = 2<sup>K</sup> * 2<sup>A</sup> = 2<sup>K+A</sup>. Đưa về trường hợp 2<sup>K</sup> ở trên. Ta không thể chết do X &le; |M/2|.
+  * Bước 2: Đưa vào số ghế bằng 2<sup>K</sup> * X. Số ghế còn lại là 2<sup>K</sup> * (M-X) = 2<sup>K</sup> * 2<sup>A</sup> = 2<sup>K+A</sup>. Đưa về trường hợp 2<sup>K</sup> ở trên. Ta không thể chết do X &le; |M/2|.
 
 **=> VẬY LÀ CHẮC CHẮN THẮNG TRONG MỌI TRƯỜNG HỢP. (PROBLEM A SOLVED)**
 
