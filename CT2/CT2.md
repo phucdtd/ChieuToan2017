@@ -100,6 +100,9 @@ _Chú thích: Ở đây, xét trường hợp giả sử cả 2 người đều 
     * Kết luận: Người đi trước thắng.
   * 11 ghế: Đưa về 8,9 hoặc 10, đi sau => Đưa về 8, thắng
     * Kết luận: Người đi trước thắng.
+  
+<details>
+  <summary> Phần ngu học của cách trước </summary>
   * 12 ghế: Đưa về 9,10 hoặc 11, đi sau => Kiểu gì cũng thua
     * Kết luận: Người đi sau thắng.
   * 13 ghế: 9,10,11,12 => Win (12)
@@ -121,7 +124,10 @@ _Chú thích: Ở đây, xét trường hợp giả sử cả 2 người đều 
   * ![Imgur](http://i.imgur.com/XPpyVnA.gif)
   * Giải ra ta có:
   * ![Imgur](http://i.imgur.com/wHWyUZ2.png)
-    
+</details>
+<pre></pre>
+### UPDATE SOLUTION (b):
+* Với các trường hợp N&ge;12, ta chọn đi trước và bắt đầu với bước đi "1". Vậy đối thủ sẽ phải chọn đi "1" hoặc "2". Dù thế nào thì qua 1 vòng các nước đi (1 của mình và 1 của đối thủ), số lượng ghế giảm đi không quá ```3 cái ghế```. (Đang nghĩ nốt w8)
   
 <a name="warp_Conclusion"></a>
 ## Mở rộng
